@@ -1,0 +1,17 @@
+{
+  "name": "projectflow360-tracker",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ProjectFlow 360 — stage tracker. Static site + Firebase Realtime Database.",
+  "scripts": {
+    "rules": "node firebase/build-rules.mjs",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "test:browser": "node tests/browser-smoke.mjs",
+    "serve": "npx --yes http-server -c-1 -p 8080 ."
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0",
+    "targaryen": "^3.1.0"
+  }
+}
